@@ -1,0 +1,28 @@
+---
+const { bookingUrl, portalUrl = bookingUrl } = Astro.props;
+---
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Roze Health home">
+    <img src="/images/roze-logo.png" alt="Roze Health Medical Aesthetics logo" />
+  </a>
+
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="#dysport">Dysport®</a>
+    <a href="#fillers">Fillers</a>
+    <a href="#microneedling">Microneedling</a>
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="portal-button" href={portalUrl} target="_blank" rel="noopener noreferrer">
+      Patient Portal
+    </a>
+    <a class="book-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">
+      Book Consultation
+    </a>
+  </div>
+</header>

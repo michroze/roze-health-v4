@@ -1,0 +1,9 @@
+.site-header { position: fixed; z-index: 50; inset: 0 0 auto; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2rem; min-height: 88px; padding: .8rem clamp(1rem, 4vw, 3.5rem); border-bottom: 1px solid rgba(111,63,71,.08); background: rgba(251,247,243,.86); backdrop-filter: blur(18px); }
+.brand img { width: 150px; height: 58px; object-fit: contain; }
+.nav { display: flex; justify-content: center; gap: clamp(.9rem, 2vw, 1.8rem); }
+.nav a { color: var(--muted); font-size: .84rem; font-weight: 500; text-decoration: none; }
+.nav a:hover { color: var(--rose); }
+.nav-actions { display: flex; gap: .65rem; }
+.portal-button, .book-button { min-height: 44px; padding: .72rem 1.05rem; font-size: .8rem; }
+@media (max-width: 1080px) { .nav { display: none; } .site-header { grid-template-columns: 1fr auto; } }
+@media (max-width: 650px) { .site-header { min-height: 72px; padding: .5rem .8rem; } .brand img { width: 120px; } .portal-button { display: none; } .book-button { min-height: 40px; padding: .65rem .9rem; } }

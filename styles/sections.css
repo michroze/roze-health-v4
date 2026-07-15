@@ -1,0 +1,35 @@
+.philosophy-section { padding: clamp(5rem, 9vw, 9rem) 0; text-align: center; background: var(--white); }
+.treatment-section { background: var(--cream); }
+.treatment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 7vw, 7rem); align-items: center; }
+.editorial-card { padding: clamp(2rem, 4vw, 4rem); border: 1px solid var(--line); border-radius: 2rem; background: rgba(255,255,255,.7); box-shadow: var(--shadow); }
+.check-list { display: grid; gap: .7rem; padding: 0; margin: 1.8rem 0 2.2rem; list-style: none; }
+.check-list li::before { content: "✓"; margin-right: .75rem; color: var(--gold); }
+.treatment-art { overflow: hidden; min-height: 600px; border-radius: 2rem; box-shadow: var(--shadow); }
+.treatment-art img { width: 100%; height: 600px; object-fit: cover; }
+.about-expanded-section { background: var(--white); }
+.section-heading { max-width: 900px; margin: 0 auto 3.5rem; text-align: center; }
+.about-intro { max-width: 820px; margin: 0 auto 5rem; text-align: center; color: var(--muted); }
+.provider-feature { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(2.5rem, 6vw, 6rem); align-items: center; margin: 5rem 0; }
+.provider-feature-nathalie { grid-template-columns: 1.15fr .85fr; }
+.provider-feature-nathalie .provider-feature-image { order: 2; }
+.provider-feature-image { overflow: hidden; border-radius: 2rem; box-shadow: var(--shadow); }
+.provider-feature-image img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.role, .credentials { color: var(--rose); }
+.about-values { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 5rem; }
+.about-values article { padding: 2rem; border: 1px solid var(--line); border-radius: 1.5rem; background: var(--cream); }
+.about-values span { color: var(--gold); font-size: .8rem; letter-spacing: .15em; }
+.resources-section { background: linear-gradient(135deg, var(--rose-deep), #8f555e); color: #fff; }
+.resources-card { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.resources-section .eyebrow { color: #e4c99e; }
+.resources-section h2 { max-width: 750px; }
+.resources-section .lead { color: rgba(255,255,255,.75); }
+.resource-button { flex: 0 0 auto; color: #fff; border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.08); }
+.faq-section { background: var(--cream); }
+.faq-list details { border-top: 1px solid var(--line); padding: 1.4rem 0; }
+.faq-list details:last-child { border-bottom: 1px solid var(--line); }
+.faq-list summary { cursor: pointer; color: var(--rose-deep); font-family: var(--font-display); font-size: 1.7rem; }
+.cta-section { padding: clamp(5rem,9vw,8rem) 0; text-align: center; background: var(--white); }
+.contact-details { display: flex; justify-content: center; gap: .8rem; margin-top: 1.5rem; color: var(--muted); }
+.footer { padding: 3rem 1.5rem; text-align: center; border-top: 1px solid var(--line); background: var(--cream); color: var(--muted); }
+.footer img { width: 170px; margin: 0 auto 1rem; }
+@media (max-width: 900px) { .treatment-grid, .provider-feature, .provider-feature-nathalie { grid-template-columns: 1fr; } .provider-feature-nathalie .provider-feature-image { order: 0; } .about-values { grid-template-columns: 1fr; } .resources-card { align-items: flex-start; flex-direction: column; } }

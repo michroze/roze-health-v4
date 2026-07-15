@@ -1,0 +1,160 @@
+/* ========================================
+   Opening Section - Redesigned Hero Panel
+   ======================================== */
+
+.opening-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 13rem 0 7rem;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(243, 231, 229, 0.95), transparent 28%),
+    radial-gradient(circle at 10% 85%, rgba(214, 184, 137, 0.18), transparent 26%),
+    linear-gradient(135deg, var(--cream), var(--white) 52%, var(--warm));
+}
+
+.ambient {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(4px);
+  opacity: 0.65;
+}
+
+.ambient-one {
+  width: 420px;
+  height: 420px;
+  right: -160px;
+  top: 160px;
+  background: rgba(196, 138, 144, 0.16);
+}
+
+.ambient-two {
+  width: 300px;
+  height: 300px;
+  left: -120px;
+  bottom: 120px;
+  background: rgba(214, 184, 137, 0.14);
+}
+
+.opening-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: clamp(3rem, 6vw, 6.5rem);
+  align-items: center;
+}
+
+.signature-panel {
+  position: relative;
+  min-height: 610px;
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.92), transparent 28%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(243, 231, 229, 0.72));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.signature-panel::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border-radius: 1.8rem;
+  border: 1px solid rgba(196, 138, 144, 0.16);
+  pointer-events: none;
+}
+
+.signature-panel::after {
+  content: "";
+  position: absolute;
+  right: -5rem;
+  bottom: -5rem;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  background: rgba(196, 138, 144, 0.08);
+  pointer-events: none;
+}
+
+.hero-logo-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.hero-logo-wrap img {
+  width: min(360px, 85%);
+  height: auto;
+  opacity: 0.92;
+  filter: drop-shadow(0 14px 28px rgba(112, 82, 86, 0.08));
+  transition: transform 0.45s ease;
+}
+
+.signature-panel:hover .hero-logo-wrap img {
+  transform: scale(1.025);
+}
+
+.signature-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.gold-line {
+  width: 92px;
+  height: 1px;
+  margin: 0 auto 1.6rem;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.signature-panel h2 {
+  color: var(--rose);
+  font-size: clamp(3.2rem, 5vw, 5.4rem);
+  letter-spacing: -0.04em;
+}
+
+.panel-copy {
+  color: var(--muted);
+  max-width: 430px;
+  margin: 0 auto;
+  font-size: 1.04rem;
+}
+
+@media (max-width: 1040px) {
+  .opening-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-panel {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 680px) {
+  .opening-section {
+    padding: 9rem 0 4.6rem;
+    min-height: auto;
+  }
+
+  .signature-panel {
+    min-height: 470px;
+    padding: 2rem;
+  }
+
+  .hero-logo-wrap img {
+    width: min(300px, 90%);
+  }
+}
+.opening-copy h1 em { font-family: var(--font-display); }
+.signature-kicker { color: var(--gold); font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.button-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.hero-assurances { display: flex; flex-wrap: wrap; gap: .8rem 1.4rem; margin-top: 2.1rem; color: var(--muted); font-size: .82rem; }
+.hero-assurances span::before { content: "•"; margin-right: .55rem; color: var(--gold); }

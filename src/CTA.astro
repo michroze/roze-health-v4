@@ -1,0 +1,25 @@
+---
+const { bookingUrl, phoneDisplay, phoneHref, email } = Astro.props;
+---
+
+<section class="cta-section" id="contact">
+  <div class="container narrow reveal">
+    <p class="eyebrow">Begin Here</p>
+
+    <h2>Your consultation starts here.</h2>
+
+    <p class="lead">
+      Begin with a personalized assessment and treatment discussion tailored to your goals.
+    </p>
+
+    <a class="primary-button" href={bookingUrl} target="_blank" rel="noopener">
+      Book Consultation <span>→</span>
+    </a>
+
+    <div class="contact-details">
+      <a href={`tel:${phoneHref}`}>{phoneDisplay}</a>
+      <span>•</span>
+      <a href={`mailto:${email}`}>{email}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,103 @@
+---
+const { bookingUrl } = Astro.props;
+---
+
+<section
+  class="section microneedling-section"
+  id="microneedling"
+  aria-labelledby="microneedling-title"
+>
+  <div class="container microneedling-layout">
+    <div class="microneedling-art reveal" aria-hidden="true">
+      <div class="microneedling-art-header">
+        <span>Skin renewal</span>
+        <span>Roze Health</span>
+      </div>
+
+      <div class="skin-diagram">
+        <div class="skin-glow glow-one"></div>
+        <div class="skin-glow glow-two"></div>
+
+        <div class="skin-layer skin-layer-surface"></div>
+        <div class="skin-layer skin-layer-middle"></div>
+        <div class="skin-layer skin-layer-deep"></div>
+
+        <span class="micro-channel channel-one"></span>
+        <span class="micro-channel channel-two"></span>
+        <span class="micro-channel channel-three"></span>
+        <span class="micro-channel channel-four"></span>
+        <span class="micro-channel channel-five"></span>
+
+        <span class="renewal-ring ring-one"></span>
+        <span class="renewal-ring ring-two"></span>
+        <span class="renewal-ring ring-three"></span>
+      </div>
+
+      <div class="microneedling-art-footer">
+        <span><strong>01</strong> Precision</span>
+        <span><strong>02</strong> Renewal</span>
+        <span><strong>03</strong> Refine</span>
+      </div>
+    </div>
+
+    <div class="microneedling-copy reveal">
+      <p class="eyebrow">Microneedling</p>
+      <h2 id="microneedling-title">
+        Support renewal.<br />
+        Refine texture.<br />
+        <em>Reveal smoother-looking skin.</em>
+      </h2>
+
+      <p class="lead">
+        Microneedling uses controlled, precise microchannels to support the skin’s
+        natural renewal response and improve the appearance of texture concerns.
+      </p>
+
+      <p>
+        Treatment plans are tailored to your skin, goals, and tolerance. Your
+        consultation includes a review of suitability, expected downtime, aftercare,
+        and whether a series of treatments may be appropriate.
+      </p>
+
+      <div class="microneedling-benefits" aria-label="Microneedling treatment goals">
+        <article>
+          <span>01</span>
+          <h3>Texture</h3>
+          <p>Support a smoother, more refined-looking skin surface.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Fine lines</h3>
+          <p>Target the appearance of early lines and crepey texture.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Acne scars</h3>
+          <p>Improve the appearance of selected atrophic acne scars.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Skin quality</h3>
+          <p>Promote a fresher, more even, revitalized appearance.</p>
+        </article>
+      </div>
+
+      <p class="treatment-note">
+        Results, treatment frequency, and downtime vary. A consultation is required
+        to determine whether microneedling is appropriate for you.
+      </p>
+
+      <a
+        class="primary-button"
+        href={bookingUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Book a Microneedling Consultation <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>

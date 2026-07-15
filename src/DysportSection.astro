@@ -1,0 +1,44 @@
+---
+const { bookingUrl } = Astro.props;
+
+// Use this filename for your Dysport image:
+// public/images/dysport.png
+//
+// If your file is JPG or WEBP, change the src below to:
+// /images/dysport.jpg
+// /images/dysport.webp
+---
+
+<section class="section treatment-section" id="dysport">
+  <div class="container treatment-grid">
+    <div class="editorial-card reveal">
+      <p class="eyebrow">Featured Treatment</p>
+
+      <h2>Dysport®</h2>
+
+      <p>
+        Dysport® temporarily relaxes selected facial muscles responsible for
+        dynamic wrinkles while helping preserve natural facial expression.
+      </p>
+
+      <ul class="check-list">
+        <li>Frown lines</li>
+        <li>Forehead lines</li>
+        <li>Crow’s feet</li>
+        <li>Natural-looking softening</li>
+      </ul>
+
+      <a class="primary-button" href={bookingUrl} target="_blank" rel="noopener">
+        Book Dysport Consultation <span>→</span>
+      </a>
+    </div>
+
+    <div class="treatment-art reveal">
+      <img
+        src="/images/dysport.jpg"
+        alt="Dysport product"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>

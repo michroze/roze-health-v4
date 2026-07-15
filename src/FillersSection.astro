@@ -1,0 +1,47 @@
+---
+const { bookingUrl } = Astro.props;
+---
+
+<section class="section fillers-section" id="fillers" aria-labelledby="fillers-title">
+  <div class="container fillers-layout">
+    <div class="fillers-copy reveal">
+      <p class="eyebrow">Dermal Fillers</p>
+      <h2 id="fillers-title">Restore volume.<br />Refine contours.<br /><em>Enhance naturally.</em></h2>
+      <p class="lead">
+        Personalized dermal filler treatments designed to enhance proportion,
+        restore subtle volume, and preserve the features that make you look like you.
+      </p>
+      <p>
+        Every treatment begins with a careful assessment of your anatomy, goals,
+        and medical history. Recommendations are conservative, individualized,
+        and guided by a natural-results philosophy.
+      </p>
+      <a class="primary-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">
+        Book a Filler Consultation <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="filler-treatment-grid reveal" aria-label="Filler treatment areas">
+      <article class="filler-card">
+        <span class="card-number">01</span>
+        <h3>Lip Enhancement</h3>
+        <p>Subtle definition, hydration, and proportion tailored to your features.</p>
+      </article>
+      <article class="filler-card">
+        <span class="card-number">02</span>
+        <h3>Cheek Contouring</h3>
+        <p>Thoughtful volume placement to support shape and restore gentle contour.</p>
+      </article>
+      <article class="filler-card">
+        <span class="card-number">03</span>
+        <h3>Chin Enhancement</h3>
+        <p>Refined projection and profile support with a measured, conservative approach.</p>
+      </article>
+      <article class="filler-card">
+        <span class="card-number">04</span>
+        <h3>Jawline Definition</h3>
+        <p>Strategic contouring intended to create subtle definition and balance.</p>
+      </article>
+    </div>
+  </div>
+</section>

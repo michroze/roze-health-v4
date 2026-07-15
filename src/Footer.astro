@@ -1,0 +1,15 @@
+---
+const { phoneDisplay, phoneHref, email } = Astro.props;
+---
+
+<footer class="footer">
+  <img src="/images/roze-logo.png" alt="Roze Health logo" />
+
+  <p>Roze Health Medical Aesthetics</p>
+
+  <p>
+    <a href={`tel:${phoneHref}`}>{phoneDisplay}</a>
+    ·
+    <a href={`mailto:${email}`}>{email}</a>
+  </p>
+</footer>

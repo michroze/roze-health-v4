@@ -1,0 +1,47 @@
+---
+const { bookingUrl } = Astro.props;
+---
+
+<section class="opening-section" aria-labelledby="hero-title">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <div class="container opening-grid">
+    <div class="opening-copy reveal">
+      <p class="eyebrow">Physician-Led Medical Aesthetics</p>
+      <h1 id="hero-title">Natural Beauty.<br /><em>Clinical Precision.</em></h1>
+      <p class="lead">
+        Refined injectable and skin-renewal treatments delivered with medical oversight,
+        thoughtful assessment, and a commitment to subtle, natural-looking results.
+      </p>
+
+      <div class="button-row">
+        <a class="primary-button" href={bookingUrl} target="_blank" rel="noopener noreferrer">
+          Book Consultation <span aria-hidden="true">→</span>
+        </a>
+        <a class="secondary-button" href="#treatments">Explore Treatments</a>
+      </div>
+
+      <div class="hero-assurances" aria-label="Clinic highlights">
+        <span>Physician oversight</span>
+        <span>Individualized plans</span>
+        <span>Natural-looking results</span>
+      </div>
+    </div>
+
+    <div class="signature-panel reveal">
+      <div class="hero-logo-wrap">
+        <img src="/images/roze-logo.png" alt="Roze Health Medical Aesthetics" />
+      </div>
+      <div class="signature-content">
+        <div class="gold-line"></div>
+        <p class="signature-kicker">Our philosophy</p>
+        <h2>Refresh,<br />not transform.</h2>
+        <p class="panel-copy">
+          A boutique clinic experience centered on evidence-informed care,
+          patient education, and refined cosmetic results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
